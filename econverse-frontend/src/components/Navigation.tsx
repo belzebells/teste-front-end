@@ -11,9 +11,7 @@ const Navigation: React.FC = () => {
         <a href="#" className="nav-item">MODA</a>
         <a href="#" className="nav-item">LANÇAMENTOS</a>
         <a href="#" className="nav-item nav-item--highlight">OFERTAS DO DIA</a>
-        <a href="#" className="nav-item nav-item--subscription">
-          ⭐ ASSINATURA
-        </a>
+        <a href="#" className="nav-item nav-item--subscription">⭐ ASSINATURA</a>
       </div>
     </nav>
   );
