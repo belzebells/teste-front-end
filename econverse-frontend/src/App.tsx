@@ -5,6 +5,8 @@ import HeroSection from './components/HeroSection';
 import CategoryGrid from './components/CategoryGrid';
 import ProductSection from './components/ProductSection';
 import PartnershipBanner from './components/PartnershipBanner';
+import Newsletter from './components/Newsletter';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -67,6 +69,9 @@ function App() {
         buttonText="CONFIRA"
         backgroundImage="/placeholder.svg?height=300&width=800"
       />
+
+      <Newsletter />
+      <Footer />
     </div>
   );
 }
