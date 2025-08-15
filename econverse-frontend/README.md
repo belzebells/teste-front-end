@@ -1,69 +1,64 @@
-# React + TypeScript + Vite
+# Econverse - E-commerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto de teste frontend desenvolvido para a Econverse, implementando uma página de e-commerce responsiva com React + TypeScript.
 
-Currently, two official plugins are available:
+## Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 18** - Biblioteca JavaScript para interfaces
+- **TypeScript** - Tipagem estática para JavaScript
+- **Vite** - Build tool e dev server
+- **CSS3** - Estilização customizada (sem bibliotecas UI)
+- **Sass** - Pré-processador CSS
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades implementadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 📱 Interface responsiva
+- Design adaptável para desktop, tablet e mobile
+- Layout pixel-perfect baseado no Figma fornecido
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🛍️ Catálogo de produtos
+- Grid de produtos com informações detalhadas
+- Preços, parcelamento e promoções
+- Hover effects e animações suaves
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 🔍 Modal de produto
+- Popup com detalhes expandidos do produto
+- Seletor de quantidade interativo
+- Botão de compra integrado
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🧭 Navegação completa
+- Header com logo da Econverse
+- Barra de busca funcional
+- Menu de categorias
+- Ícones de ações (favoritos, carrinho, perfil)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 📧 Newsletter
+- Formulário de inscrição
+- Validação de email
+- Design integrado ao tema
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🎨 Seções promocionais
+- Banner hero com call-to-action
+- Grid de categorias com ícones
+- Banners de parceiros
+- Footer completo com links
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🏃‍♂️ Como executar
+
+### Pré-requisitos
+- Node.js 16+ instalado
+- npm ou yarn
+
+### Instalação
+```bash
+# Clone o repositório
+git clone [seu-repositorio]
+
+# Entre na pasta do projeto
+cd econverse-frontend
+
+# Instale as dependências
+npm install
+
+# Execute o projeto
+npm run dev
