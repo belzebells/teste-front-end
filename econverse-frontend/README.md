@@ -52,7 +52,7 @@ Projeto de teste frontend desenvolvido para a Econverse, implementando uma pági
 ### Instalação
 ```bash
 # Clone o repositório
-git clone [seu-repositorio]
+git clone https://github.com/belzebells/teste-front-end.git
 
 # Entre na pasta do projeto
 cd econverse-frontend
