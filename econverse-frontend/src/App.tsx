@@ -110,19 +110,19 @@ function App() {
         <h2>Navegue por marcas</h2>
         <div className="brand-logos">
           <div className="brand-logo-circle">
-            <img src="/images/Group 35.png" alt="Econverse" />
+            <img src="/images/Group-35.png" alt="Econverse" />
           </div>
           <div className="brand-logo-circle">
-            <img src="/images/Group 35.png" alt="Econverse" />
+            <img src="/images/Group-35.png" alt="Econverse" />
           </div>
           <div className="brand-logo-circle">
-            <img src="/images/Group 35.png" alt="Econverse" />
+            <img src="/images/Group-35.png" alt="Econverse" />
           </div>
           <div className="brand-logo-circle">
-            <img src="/images/Group 35.png" alt="Econverse" />
+            <img src="/images/Group-35.png" alt="Econverse" />
           </div>
           <div className="brand-logo-circle">
-            <img src="/images/Group 35.png" alt="Econverse" />
+            <img src="/images/Group-35.png" alt="Econverse" />
           </div>
         </div>
       </section>
