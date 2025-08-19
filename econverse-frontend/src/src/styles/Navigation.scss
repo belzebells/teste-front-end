@@ -1,0 +1,45 @@
+.navigation {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.nav-item--all {
+  color: #333;
+  font-weight: 600;
+}
+
+.nav-item--highlight {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.nav-item--subscription {
+  color: #333;
+  font-weight: 600;
+}

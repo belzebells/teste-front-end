@@ -1,0 +1,75 @@
+.newsletter {
+  background: linear-gradient(110deg, #011038 0%, #002042 100%);
+  padding: 3rem 0 3.2rem;
+}
+
+.newsletter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.newsletter-content {
+  flex: 1.2;
+  color: #fff;
+  text-align: left;
+  min-width: 340px;
+}
+
+.newsletter-title  { font: 700 2.1rem/1.2 'Inter', sans-serif; margin-bottom: 1rem; }
+.newsletter-subtitle { font-size: 1.05rem; opacity: .95; }
+
+/* ---------- formulário ---------- */
+.newsletter-form {
+  flex: 1;
+  max-width: 680px;        /* cabe dentro da faixa azul */
+  display: flex;
+  align-items: flex-start;
+  gap: .8rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-input {
+  flex: 1 1 200px;
+  padding: .9rem 1.1rem;
+  border-radius: 6px;
+  border: none;
+  font-size: .95rem;
+  background: #fff;
+}
+
+.newsletter-button {
+  background: #f7d03c;
+  color: #000;
+  border: none;
+  padding: .95rem 1.6rem;
+  font: 600 .95rem/1 'Inter', sans-serif;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 120px;
+  transition: background .2s;
+}
+.newsletter-button:disabled { opacity:.4; cursor:default; }
+.newsletter-button:not(:disabled):hover { background:#e6c139; }
+
+.newsletter-checkbox {
+  width: 100%;        /* quebra linha */
+  margin-top: .8rem;
+  font-size: .85rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+.newsletter-checkbox input { accent-color:#f7d03c; }
+
+/* ----------- responsivo ----------- */
+@media (max-width: 950px) {
+  .newsletter-container   { flex-direction: column; text-align: center; }
+  .newsletter-content     { text-align: center; }
+  .newsletter-form        { justify-content: center; }
+}
