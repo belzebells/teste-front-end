@@ -1,42 +1,138 @@
-#root {
-  max-width: 1280px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+.partnership-banners-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-section {
+  padding: 4rem 2rem;
   text-align: center;
+  background-color: #f8f9fa;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.brand-section h2 {
+  color: #2563eb;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.brand-logo-circle {
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brand-logo-circle:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.brand-logo-circle img {
+  height: 35px;
+  width: auto;
+}
+
+.footer {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 3rem 2rem 2rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.footer-logo {
+  height: 30px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .partnership-banners-container {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .brand-logos {
+    gap: 2rem;
+  }
+  
+  .brand-logo-circle {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .brand-logo-circle img {
+    height: 25px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 480px) {
+  .brand-logo-circle {
+    width: 80px;
+    height: 80px;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  
+  .brand-logo-circle img {
+    height: 20px;
+  }
 }
