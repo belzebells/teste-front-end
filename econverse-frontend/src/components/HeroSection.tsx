@@ -7,8 +7,7 @@ const HeroSection: React.FC = () => {
       <div className="hero__content">
         <div className="hero__text">
           <h1 className="hero__title">
-            Venha conhecer nossas<br />
-            promoções
+            Venha conhecer nossas promoções
           </h1>
           <p className="hero__subtitle">
             <span className="hero__discount">50% Off</span> nos produtos

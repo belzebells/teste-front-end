@@ -30,11 +30,41 @@ const ProductSection: React.FC<ProductSectionProps> = ({ title, products }) => {
     setSelectedProduct(null);
   };
 
+  // Add safety check for products
+  if (!products || products.length === 0) {
+    return (
+      <section className="product-section">
+        <div className="product-container">
+          <h2 className="section-title">{title}</h2>
+          <div className="product-category-menu">
+            <span className="category-tab active">CELULAR</span>
+            <span className="category-tab">ACESSÓRIOS</span>
+            <span className="category-tab">TABLETS</span>
+            <span className="category-tab">NOTEBOOKS</span>
+            <span className="category-tab">TVS</span>
+            <span className="category-tab">VER TODOS</span>
+          </div>
+          <div>Loading products...</div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <>
       <section className="product-section">
         <div className="product-container">
           <h2 className="section-title">{title}</h2>
+          
+          <div className="product-category-menu">
+            <span className="category-tab active">CELULAR</span>
+            <span className="category-tab">ACESSÓRIOS</span>
+            <span className="category-tab">TABLETS</span>
+            <span className="category-tab">NOTEBOOKS</span>
+            <span className="category-tab">TVS</span>
+            <span className="category-tab">VER TODOS</span>
+          </div>
+          
           <div className="products-grid">
             {products.map((product) => (
               <div 
